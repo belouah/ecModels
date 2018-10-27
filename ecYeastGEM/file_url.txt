@@ -1,0 +1,1 @@
+https://raw.githubusercontent.com/SysBioChalmers/yeast-GEM/master/ModelFiles/mat/yeastGEM.mat
