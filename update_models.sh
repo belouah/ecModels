@@ -13,14 +13,14 @@ update_model()
 	cd ./$folder_name
 
 	# Create copy of GECKO w/replaced scripts/data (if any) & removed models:
-	cp ../GECKO ./GECKO
+	cp -R ../GECKO ./GECKO
 	for file_name in $(ls ./scripts); do
-		gecko_path = $(ls ./GECKO/**/$file_name)
-		cp ./scripts/$file_name gecko_path
+		gecko_path=$(find ./GECKO -name "$file_name")
+		cp ./scripts/$file_name $gecko_path
 	done
 	for file_name in $(ls ./data); do
-		gecko_path = $(ls ./GECKO/**/$file_name)
-		cp ./data/$file_name gecko_path
+		gecko_path=$(find ./GECKO -name "$file_name")
+		cp ./data/$file_name $gecko_path
 	done
 	rm -rf ./GECKO/models/ec*
 
