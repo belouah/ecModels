@@ -73,10 +73,10 @@ end
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 function [F,X] = getFraction(model,compType,X)
-bioPos     = strcmp(model.rxns,'r_1912');
-precursors = model.metNames(find(model.S(:,bioPos)));
-precIndex  = find(strcmpi(model.metNames,compType));
-F          = abs(model.S(precIndex,bioPos));
+bioPos      = strcmp(model.rxns,'r_1912');
+precursors  = model.metNames(find(model.S(:,bioPos)));
+precIndex   = find(strcmpi(model.metNames,compType));
+F           = abs(model.S(precIndex,bioPos));
 X           = X + F;
 end
 

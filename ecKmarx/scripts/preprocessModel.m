@@ -12,7 +12,6 @@
 % name      The resulting name of the model (if not specified before)
 % version   The resulting version of the model (if not specified before)
 %
-% Benjamin J. Sanchez. Last edited: 2018-09-01
 % Ivan Domenzain.      Last edited: 2019-02-06
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
